@@ -1,0 +1,20 @@
+{
+    "name": "kbclarke.modularcharactercontroller.networked-samples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5f34af1b8bfe7dd469f8e03bf07326cc",
+        "GUID:e073853e159971147a9620917a3c84d8",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "MIRROR"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

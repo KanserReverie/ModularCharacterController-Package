@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab6a8c4578f348b7974851a5c7a74720, type: 3}
+  m_Name: FPS Movement Settings
+  m_EditorClassIdentifier: 
+  jumpForce: 8
+  individualMaxSpeeds: 1
+  maxSpeed: 8
+  maxSpeedOnGround: 8
+  maxSpeedInAir: 8
+  groundDistanceCheck: 1
+  groundDistanceInAirCheck: 0.2
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
+  layerChecks:
+    serializedVersion: 2
+    m_Bits: 192
+  groundTag: Ground
+  wallTag: Wall
+  moveAction: {fileID: -2827368169719027755, guid: 9b0a1c0efcb91a14cb4d6cf290bb1ffe, type: 3}
+  jumpAction: {fileID: -7242368021332799897, guid: 9b0a1c0efcb91a14cb4d6cf290bb1ffe, type: 3}
