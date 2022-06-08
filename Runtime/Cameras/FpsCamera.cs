@@ -52,5 +52,22 @@ namespace ModularCharacterController.Cameras
 			gameObject.GetComponent<AudioListener>().enabled = _newState;
 			camera.enabled = _newState;
 		}
+
+
+		private void Reset()
+		{
+			// Find the input in scene if there is only one
+			if(input == null)
+			{
+				PlayerInput[] playerInputsInScene = FindObjectsOfType<PlayerInput>();
+
+				if(playerInputsInScene.Length == 1)
+				{
+					input = playerInputsInScene[0];
+					if (input!= null)
+						Debug.Log($"Added input {input}",this);
+				}
+			}
+		}
 	}
 }

@@ -54,8 +54,8 @@ namespace ModularCharacterController.Motors
 		[SerializeField, Range(1, 20)] private float maxSpeedOnGround;
 		[SerializeField, Range(1, 20)] private float maxSpeedInAir;
 
-		[SerializeField, Min(0.1f)] private float groundDistanceCheck = 1;
-		[SerializeField, Min(0.2f)] private float groundDistanceInAirCheck = 0.2f;
+		[SerializeField, Min(0.01f)] private float groundDistanceCheck = 1;
+		[SerializeField, Min(0.02f)] private float groundDistanceInAirCheck = 0.2f;
 
 		[SerializeField, Min(0.1f)] private float fallMultiplier = 2.5f;
 		[SerializeField, Min(0.2f)] private float lowJumpMultiplier = 2f;

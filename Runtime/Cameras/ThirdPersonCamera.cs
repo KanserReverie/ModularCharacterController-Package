@@ -101,5 +101,21 @@ namespace ModularCharacterController.Cameras
 			Gizmos.color = Color.blue;
 			Gizmos.DrawWireSphere(transform.position + transform.forward * -cameraDistance, collisionRadius);
 		}
+		
+		private void Reset()
+		{
+			// Find the input in scene if there is only one
+			if(input == null)
+			{
+				PlayerInput[] playerInputsInScene = FindObjectsOfType<PlayerInput>();
+
+				if(playerInputsInScene.Length == 1)
+				{
+					input = playerInputsInScene[0];
+					if (input!= null)
+						Debug.Log($"Added input {input}",this);
+				}
+			}
+		}
 	}
 }

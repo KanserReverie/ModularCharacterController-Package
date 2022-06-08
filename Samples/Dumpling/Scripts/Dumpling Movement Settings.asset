@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f7bba508fabc3248b7f5b23e184bc98, type: 3}
+  m_Name: Dumpling Movement Settings
+  m_EditorClassIdentifier: 
+  jumpForce: 3
+  individualMaxSpeeds: 1
+  maxSpeed: 2
+  maxSpeedOnGround: 2
+  maxSpeedInAir: 2
+  groundDistanceCheck: 0.01
+  groundDistanceInAirCheck: 0.02
+  fallMultiplier: 1
+  lowJumpMultiplier: 1
+  layerChecks:
+    serializedVersion: 2
+    m_Bits: 192
+  groundTag: Ground
+  wallTag: Wall
+  moveAction: {fileID: -2827368169719027755, guid: 90666b904c42fb34ea980351c3168382, type: 3}
+  jumpAction: {fileID: -7242368021332799897, guid: 90666b904c42fb34ea980351c3168382, type: 3}

@@ -18,20 +18,22 @@ namespace ModularCharacterController.Motors
 		[SerializeField] private float renderAlignmentSpeed = 3f;
 		
 		private new CapsuleCollider collider;
+		private new Rigidbody rigidbody;
 		private Transform player;
 		private new ThirdPersonCamera camera;
 
 		private const float SPEED_ON_GROUND_MODIFIER = 1;
 		private const float SPEED_IN_AIR_MODIFIER = 1;
-		private const float IN_AIR_GROUND_CHECK_DELAY = 0.2f;
+		private const float IN_AIR_GROUND_CHECK_DELAY = 0.1f;
 
 		private float lastTimeInAir;
 		private bool isJumpPressed;
-		
+
 		public override void Init(IMCCPlayer _playerInterface)
 		{
 			Rigidbody = _playerInterface.Rigidbody;
 			collider = (CapsuleCollider) _playerInterface.Collider;
+			rigidbody = _playerInterface.Rigidbody;
 			player = _playerInterface.Transform;
 			if(_playerInterface.TryGetBehaviour(out ThirdPersonCamera cam))
 				camera = cam;
@@ -62,6 +64,9 @@ namespace ModularCharacterController.Motors
 		{
 			// Use a smaller ground distance check if in air, to prevent suddenly snapping to ground
 			float chosenGroundCheckDistance = settings.GetGroundDistanceCheck(IsGrounded);
+
+			// If we aren't grounded and still going up skip this check.
+			if(IsGrounded == false && rigidbody.velocity.y >= 0.01) return;
 
 			// Check if the current time is greater than the required jump check time
 			if(Time.time >= lastTimeInAir + IN_AIR_GROUND_CHECK_DELAY)
@@ -178,7 +183,7 @@ namespace ModularCharacterController.Motors
 				return;
 
 			isJumpPressed = true;
-
+			
 			// If we are grounded jump and store the jump time
 			if(IsGrounded)
 			{
