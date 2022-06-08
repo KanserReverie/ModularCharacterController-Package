@@ -201,8 +201,8 @@ MonoBehaviour:
   runInBackground: 1
   autoStartServerBuild: 1
   serverTickRate: 30
-  offlineScene: Assets/MCC/Samples/Mirror/Scenes/OfflineScene.unity
-  onlineScene: Assets/MCC/Samples/Mirror/Scenes/OnlineScene.unity
+  offlineScene: Packages/com.kbclarke.modularcharactercontroller/Samples/Mirror/Scenes/OfflineScene.unity
+  onlineScene: Packages/com.kbclarke.modularcharactercontroller/Samples/Mirror/Scenes/OnlineScene.unity
   transport: {fileID: 186909337}
   networkAddress: localhost
   maxConnections: 100
