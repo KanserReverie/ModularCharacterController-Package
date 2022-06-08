@@ -1,5 +1,5 @@
 {
-    "name": "input",
+    "name": "MCC_StandadInputSystem",
     "maps": [
         {
             "name": "Player",
@@ -222,6 +222,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Joystick",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1f9a2157-a86b-4f48-a54e-af00d13de68b",
+                    "path": "<Touchscreen>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false

@@ -36,6 +36,9 @@ namespace ModularCharacterController.Cameras
 
 			input = _playerInterface.Input;
 			input.camera = camera;
+			
+			Cursor.visible = false;
+			Cursor.lockState = CursorLockMode.Locked;
 		}
 
 		protected override void OnProcess(UpdatePhase _phase)

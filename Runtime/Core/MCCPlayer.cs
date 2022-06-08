@@ -1,5 +1,6 @@
 ﻿// Creator: Kieran & James
 // Creation Time: 2022/04/11 09:01
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -125,5 +126,37 @@ namespace ModularCharacterController
 		/// Cycle through all the behaviours and run any processes(LateUpdate).
 		/// </summary>
 		private void LateUpdate() => behaviours.ForEach(_behaviour => _behaviour.Process(UpdatePhase.LateUpdate));
+
+		/// <summary>
+		/// Called when component is attached to object.
+		/// </summary>
+		private void Reset()
+		{
+			if(collider == null)
+			{
+				collider = gameObject.GetComponent<Collider>();
+				
+				if(collider != null) 
+					Debug.Log($"Added attached {collider}",this);
+			}
+
+			if(behaviours.Count == 0)
+			{
+				ModularBehaviour[] _behavioursInChildren = GetComponentsInChildren<ModularBehaviour>();
+
+				foreach(ModularBehaviour modularBehaviourBehaviour in _behavioursInChildren)
+				{
+					behaviours.Add(modularBehaviourBehaviour);
+						Debug.Log($"Added attached {modularBehaviourBehaviour} to {behaviours}", this);
+				}
+			}
+
+			if(input == null)
+			{
+				input = GetComponentInChildren<PlayerInput>();
+				if(input != null)
+					Debug.Log($"Added attached {input}",this);
+			}
+		}
 	}
 }
