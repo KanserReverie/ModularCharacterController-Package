@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 1254805618262568533}
   m_Layer: 0
   m_Name: Dumpling
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +94,7 @@ Transform:
   m_GameObject: {fileID: 4124715023546993181}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4124715023186961348}
@@ -145,7 +145,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.05
   m_Height: 0
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -191,7 +191,7 @@ Transform:
   m_GameObject: {fileID: 4124715024053305264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4124715023186961348}
@@ -262,6 +262,26 @@ PrefabInstance:
       propertyPath: settings
       value: 
       objectReference: {fileID: 11400000, guid: c4703d4ab252c8946a07a00f404f2625, type: 2}
+    - target: {fileID: 1002046486522852211, guid: 1fc0f84323949554e92f3911012c2b6d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.042
+      objectReference: {fileID: 0}
+    - target: {fileID: 1002046486522852212, guid: 1fc0f84323949554e92f3911012c2b6d, type: 3}
+      propertyPath: field of view
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1002046486522852212, guid: 1fc0f84323949554e92f3911012c2b6d, type: 3}
+      propertyPath: near clip plane
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1002046486522852212, guid: 1fc0f84323949554e92f3911012c2b6d, type: 3}
+      propertyPath: m_AllowDynamicResolution
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343311031844230012, guid: 1fc0f84323949554e92f3911012c2b6d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5907308724721774573, guid: 1fc0f84323949554e92f3911012c2b6d, type: 3}
       propertyPath: settings
       value: 
@@ -273,6 +293,10 @@ PrefabInstance:
     - target: {fileID: 6389309526406964249, guid: 1fc0f84323949554e92f3911012c2b6d, type: 3}
       propertyPath: m_Name
       value: Camera + Motor - Multicam
+      objectReference: {fileID: 0}
+    - target: {fileID: 6670989186754740219, guid: 1fc0f84323949554e92f3911012c2b6d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7406363836400331226, guid: 1fc0f84323949554e92f3911012c2b6d, type: 3}
       propertyPath: subMotors.Array.data[0]

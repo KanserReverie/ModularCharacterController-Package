@@ -7,7 +7,7 @@
   "documentationUrl": "https://github.com/KanserReverie/ModularCharacterController-Package",
   "changelogUrl": "https://github.com/KanserReverie/ModularCharacterController-Package",
   "dependencies": {
-    "com.unity.inputsystem": "1.2.0"
+    "com.unity.inputsystem": "1.2.1"
   },
   "keywords": [
     "Modular",

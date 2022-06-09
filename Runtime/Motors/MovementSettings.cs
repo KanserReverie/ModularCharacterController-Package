@@ -47,12 +47,12 @@ namespace ModularCharacterController.Motors
 		public InputAction MoveAction => moveAction;
 		public InputAction JumpAction => jumpAction;
 		
-		[SerializeField, Range(1, 20)] private float jumpForce;
+		[SerializeField, Range(0.2f, 20)] private float jumpForce;
 
 		[SerializeField] private bool individualMaxSpeeds = true;
-		[SerializeField, Range(1, 20)] private float maxSpeed;
-		[SerializeField, Range(1, 20)] private float maxSpeedOnGround;
-		[SerializeField, Range(1, 20)] private float maxSpeedInAir;
+		[SerializeField, Range(0.2f, 20)] private float maxSpeed;
+		[SerializeField, Range(0.2f, 20)] private float maxSpeedOnGround;
+		[SerializeField, Range(0.2f, 20)] private float maxSpeedInAir;
 
 		[SerializeField, Min(0.01f)] private float groundDistanceCheck = 1;
 		[SerializeField, Min(0.02f)] private float groundDistanceInAirCheck = 0.2f;
