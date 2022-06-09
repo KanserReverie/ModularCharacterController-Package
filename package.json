@@ -1,13 +1,13 @@
 {
   "name": "com.kbclarke.modularcharactercontroller",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "displayName": "Kieran API - Modular Character Controller",
   "description": "This is a Modular Character Controller, that can have modules added to it depending on the project.",
   "unity": "2021.3",
   "documentationUrl": "https://github.com/KanserReverie/ModularCharacterController-Package",
   "changelogUrl": "https://github.com/KanserReverie/ModularCharacterController-Package",
   "dependencies": {
-    "com.unity.inputsystem": "1.2.1"
+    "com.unity.inputsystem": "1.2.0"
   },
   "keywords": [
     "Modular",
