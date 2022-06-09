@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f7bba508fabc3248b7f5b23e184bc98, type: 3}
   m_Name: Dumpling Movement Settings
   m_EditorClassIdentifier: 
-  jumpForce: 3
+  jumpForce: 2.4
   individualMaxSpeeds: 1
-  maxSpeed: 2
-  maxSpeedOnGround: 2
-  maxSpeedInAir: 2
+  maxSpeed: 1
+  maxSpeedOnGround: 1
+  maxSpeedInAir: 1
   groundDistanceCheck: 0.01
   groundDistanceInAirCheck: 0.02
-  fallMultiplier: 1
-  lowJumpMultiplier: 1
+  fallMultiplier: 0.6
+  lowJumpMultiplier: 2
   layerChecks:
     serializedVersion: 2
     m_Bits: 192
